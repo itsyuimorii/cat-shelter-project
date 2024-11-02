@@ -1,33 +1,31 @@
-import * as React from "react";
-import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
+import React from "react";
 
-export const CatCard = () => {
+interface ImageProps {
+  src: string;
+  alt: string;
+}
+
+export const CatCard: React.FC<ImageProps> = ({ src, alt }) => {
   return (
-    <Card sx={{ maxWidth: 345 }}>
-      <CardMedia
-        component="img"
-        alt="green iguana"
-        height="140"
-        image="/static/images/cards/contemplative-reptile.jpg"
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-          Lizard
-        </Typography>
-        <Typography variant="body2" sx={{ color: "text.secondary" }}>
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
-        </Typography>
-      </CardContent>
-      <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
-      </CardActions>
-    </Card>
+    <div className="border-4 border-black rounded-md shadow-pixelShadow p-4 bg-white relative max-w-60 flex flex-col items-center justify-center ">
+      <h1 className="text-2xl font-bold text-black">Cat Name</h1>
+      <p className="text-gray-800 mt-2">Breed: alien</p>
+
+      <button className="mt-4 text-black font-bold  hover:shadow-pixelShadow border-black border-4 px-4 py-2 transition hover:-translate-x-1 hover:-translate-y-1 duration-300 ease-in-out">
+        More info
+      </button>
+    </div>
   );
 };
+
+// Usage example
+const App = () => {
+  return (
+    <CatCard
+      src="https://via.placeholder.com/150" // Replace with the actual image URL of your screenshot
+      alt="Gemma2 2B Model Screenshot"
+    />
+  );
+};
+
+export default App;

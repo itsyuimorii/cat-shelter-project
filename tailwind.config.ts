@@ -19,11 +19,13 @@ const config: Config = {
       },
     },
     extend: {
+      boxShadow: {
+        pixelShadow: "4px 5px 0 1px #000000",
+      },
       colors: {
-        "default-500": "#3563E9",
-        "default-300": "#5CAFFC",
-        "default-100": "#94A7CB",
-        "default-light": "#C3D4E9",
+        "default-bg": "#FFF59F",
+
+        "default-100": "#A5B4FB",
         "dark-900": "#1A202C",
         "dark-850": "#293346",
         "dark-800": "#424B5C",
@@ -101,7 +103,7 @@ const config: Config = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       fontFamily: {
-        ppneue: ["PPNeueMontreal", "sans-serif"],
+        jetbrainsmono: ["JetBrains Mono", "monospace"],
       },
     },
   },
