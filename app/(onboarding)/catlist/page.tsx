@@ -1,8 +1,14 @@
 import React from "react";
 import { CatCard } from "@/components/catCard";
+import { TopFilter } from "@/components/TopFilter";
 
 // export const index = () => {}
 
 export default function Page() {
-  return <CatCard />;
+  return (
+    <div>
+      <TopFilter />
+      <CatCard />
+    </div>
+  );
 }

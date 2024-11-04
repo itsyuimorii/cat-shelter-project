@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export const Navbar: React.FC = () => {
   return (
-    <div className="flex flex-row items-center justify-between bg-default-100 border-4 border-black rounded-md p-2 max-w-screen-lg mx-auto shadow-pixelShadow">
+    <div className="flex flex-row items-center justify-between bg-default-100 border-4 border-black p-2 max-w-screen-lg mx-auto shadow-pixelShadow rounded-[8px]">
       <div className="font-bold text-lg text-black">Ask me CAT</div>
       <div className=" flex flex-row items-center justify-between space-x-4">
         <a href="#" className="text-black hover:underline">
