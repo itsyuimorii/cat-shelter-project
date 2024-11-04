@@ -15,13 +15,11 @@ export const Navbar: React.FC = () => {
         <a href="#" className="text-black hover:underline">
           GitHub
         </a>
-        <div className="gap-2 text-black font-bold bg-white hover:shadow-pixelShadow border-black border-4 transition hover:-translate-x-1 hover:-translate-y-1 duration-300 ease-in-out flex items-center">
+        <div className=" text-black font-bold bg-white hover:shadow-pixelShadow border-black border-4 transition hover:-translate-x-1 hover:-translate-y-1 duration-300 ease-in-out flex items-center">
           <span className="border-black border-r-4">
-            {" "}
             <Image src="/cog.svg" height={28} width={28} alt="cog icon" />
           </span>
-
-          <a href="#" className="font-jetbrainsmono">
+          <a href="#" className="font-jetbrainsmono px-2">
             Settings
           </a>
         </div>
