@@ -5,7 +5,7 @@ interface ImageProps {
   alt: string;
 }
 
-export const CatCard: React.FC<ImageProps> = ({ src, alt }) => {
+export const CatCard: React.FC<ImageProps> = () => {
   return (
     <div className="border-4 border-black shadow-pixelShadow p-4 bg-white relative max-w-60 flex flex-col items-center justify-center rounded-[8px]">
       <h1 className="text-2xl font-bold text-black">Cat Name</h1>
